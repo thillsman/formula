@@ -14,7 +14,7 @@
 		D2B7F91519EB5FF0008B8055 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2B7F91319EB5FF0008B8055 /* LaunchScreen.xib */; };
 		D2B7F92119EB5FF0008B8055 /* FormulaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7F92019EB5FF0008B8055 /* FormulaTests.swift */; };
 		D2F45EFA1A3685AB00E488C1 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F45EF91A3685AB00E488C1 /* Calculator.swift */; };
-		D2F45EFC1A36860C00E488C1 /* Formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F45EFB1A36860C00E488C1 /* Formula.swift */; };
+		D2F45EFC1A36860C00E488C1 /* FormulaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F45EFB1A36860C00E488C1 /* FormulaType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,7 @@
 		D2B7F92019EB5FF0008B8055 /* FormulaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaTests.swift; sourceTree = "<group>"; };
 		D2B7F92A19EB6049008B8055 /* Formula.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Formula.playground; sourceTree = "<group>"; };
 		D2F45EF91A3685AB00E488C1 /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
-		D2F45EFB1A36860C00E488C1 /* Formula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formula.swift; sourceTree = "<group>"; };
+		D2F45EFB1A36860C00E488C1 /* FormulaType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 			children = (
 				D2B7F90A19EB5FF0008B8055 /* AppDelegate.swift */,
 				D2B7F90C19EB5FF0008B8055 /* ViewController.swift */,
-				D2F45EFB1A36860C00E488C1 /* Formula.swift */,
+				D2F45EFB1A36860C00E488C1 /* FormulaType.swift */,
 				D2F45EF91A3685AB00E488C1 /* Calculator.swift */,
 				D2B7F90E19EB5FF0008B8055 /* Main.storyboard */,
 				D2B7F91119EB5FF0008B8055 /* Images.xcassets */,
@@ -222,7 +222,7 @@
 			files = (
 				D2B7F90D19EB5FF0008B8055 /* ViewController.swift in Sources */,
 				D2B7F90B19EB5FF0008B8055 /* AppDelegate.swift in Sources */,
-				D2F45EFC1A36860C00E488C1 /* Formula.swift in Sources */,
+				D2F45EFC1A36860C00E488C1 /* FormulaType.swift in Sources */,
 				D2F45EFA1A3685AB00E488C1 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

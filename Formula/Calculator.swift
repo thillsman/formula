@@ -22,7 +22,7 @@ class Calculator {
     var vitaminD: Float = 0.0
     var zinc: Float = 0.0
     
-    func calc(formulaSelected:Formula, value:Float, toggleValue:Int) -> (intake: Float, calories: Float, protein: Float, water: Float, fiber: Float, calcium: Float, iron: Float, potassium: Float, phosphorus: Float, sodium: Float, vitaminD: Float, zinc: Float) {
+    func calc(formulaSelected:FormulaType, value:Float, toggleValue:Int) -> (intake: Float, calories: Float, protein: Float, water: Float, fiber: Float, calcium: Float, iron: Float, potassium: Float, phosphorus: Float, sodium: Float, vitaminD: Float, zinc: Float) {
         
         var ml = value
         

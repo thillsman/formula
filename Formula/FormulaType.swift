@@ -1,5 +1,5 @@
 //
-//  Formula.swift
+//  FormulaType
 //  Formula
 //
 //  Created by Tyler Hillsman on 12/8/14.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Formula: String {
+enum FormulaType: String {
     case CP = "Compleat Pediatric"
     case CPRC = "Compleat Pediatric Reduced Calorie"
     case BKE = "Boost Kid Essentials"

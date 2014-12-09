@@ -27,8 +27,8 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     @IBOutlet weak var caloriesView: UIView!
     @IBOutlet weak var intakeView: UIView!
     @IBOutlet weak var toggle: UISegmentedControl!
-    var formulaOptions = Formula.allValues
-    var formulaSelected: Formula?
+    var formulaOptions = FormulaType.allValues
+    var formulaSelected: FormulaType?
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
