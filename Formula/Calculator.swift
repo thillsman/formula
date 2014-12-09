@@ -18,9 +18,9 @@ class Calculator {
         case .BKEF:
             return BoostKidEssentialsWithFiberFormula(intake: intake)
         case .CP:
-            return CompleatPedeatricFormula(intake: intake)
+            return CompleatPediatricFormula(intake: intake)
         case .CPRC:
-            return CompleatPedeatricRCFormula(intake: intake)
+            return CompleatPediatricRCFormula(intake: intake)
         }
     }
 }
