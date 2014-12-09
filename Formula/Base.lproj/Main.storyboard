@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="OUQ-hl-f9t"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lc1-wu-iCy">
@@ -733,7 +733,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="calciumVal" destination="omk-an-P3a" id="p6g-Ut-9GI"/>
                         <outlet property="caloriesVal" destination="UIN-ME-9PN" id="wEp-Q2-LoM"/>
