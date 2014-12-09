@@ -9,10 +9,19 @@
 import Foundation
 
 class Formula {
-    var intake: Float = 0.0 {
+    var intake: Intake {
         didSet { recalculate() }
     }
     
+    var milliliters: Float {
+        switch intake {
+        case let .Direct(value):
+            return value
+        case let .Calories(value):
+            return value / caloriesPerMilliliter
+        }
+    }
+    var caloriesPerMilliliter: Float = 1.0
     var calories: Float = 0.0
     var protein: Float = 0.0
     var water: Float = 0.0
@@ -25,7 +34,7 @@ class Formula {
     var vitaminD: Float = 0.0
     var zinc: Float = 0.0
     
-    init(intake: Float) {
+    init(intake: Intake) {
         self.intake = intake
     }
     

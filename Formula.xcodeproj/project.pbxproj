@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B5AA0A491A36A91C00494C5D /* Formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AA0A481A36A91C00494C5D /* Formula.swift */; };
 		B5AA0A4C1A36A9B200494C5D /* CompleatPedeatricFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AA0A4B1A36A9B200494C5D /* CompleatPedeatricFormula.swift */; };
+		B5AA0A4E1A37396A00494C5D /* Intake.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AA0A4D1A37396A00494C5D /* Intake.swift */; };
 		D2B7F90B19EB5FF0008B8055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7F90A19EB5FF0008B8055 /* AppDelegate.swift */; };
 		D2B7F90D19EB5FF0008B8055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7F90C19EB5FF0008B8055 /* ViewController.swift */; };
 		D2B7F91019EB5FF0008B8055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B7F90E19EB5FF0008B8055 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		B5AA0A481A36A91C00494C5D /* Formula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Formula.swift; path = ../Formula.swift; sourceTree = "<group>"; };
 		B5AA0A4B1A36A9B200494C5D /* CompleatPedeatricFormula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleatPedeatricFormula.swift; sourceTree = "<group>"; };
+		B5AA0A4D1A37396A00494C5D /* Intake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intake.swift; sourceTree = "<group>"; };
 		D2B7F90519EB5FF0008B8055 /* Formula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Formula.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B7F90919EB5FF0008B8055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2B7F90A19EB5FF0008B8055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			children = (
 				B5AA0A481A36A91C00494C5D /* Formula.swift */,
 				B5AA0A4B1A36A9B200494C5D /* CompleatPedeatricFormula.swift */,
+				B5AA0A4D1A37396A00494C5D /* Intake.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				B5AA0A491A36A91C00494C5D /* Formula.swift in Sources */,
 				B5AA0A4C1A36A9B200494C5D /* CompleatPedeatricFormula.swift in Sources */,
 				D2F45EFA1A3685AB00E488C1 /* Calculator.swift in Sources */,
+				B5AA0A4E1A37396A00494C5D /* Intake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
