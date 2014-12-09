@@ -9,36 +9,41 @@
 import Foundation
 
 class Formula {
-    var intake: Intake {
-        didSet { recalculate() }
-    }
+    var intake: Intake
+    
+    // MARK: Multipliers
+    
+    // This is defined in a "computed property" so we can override it in subclasses.
+    // Swift does not let you override defined-value properties.
+    var caloriesMultiplier: Float { return 1.0 }
+    
+    // MARK: Calculation properties
+    // These are exposed as properties because they're values derived from very basic calculation.
+    // It's more of a semantic thing than a hard requirement.
     
     var milliliters: Float {
         switch intake {
         case let .Direct(value):
             return value
         case let .Calories(value):
-            return value / caloriesPerMilliliter
+            return value / caloriesMultiplier
         }
     }
-    var caloriesPerMilliliter: Float = 1.0
-    var calories: Float = 0.0
-    var protein: Float = 0.0
-    var water: Float = 0.0
-    var fiber: Float = 0.0
-    var calcium: Float = 0.0
-    var iron: Float = 0.0
-    var potassium: Float = 0.0
-    var phosphorus: Float = 0.0
-    var sodium: Float = 0.0
-    var vitaminD: Float = 0.0
-    var zinc: Float = 0.0
+    // This one is defined in the super-class and not usually overriden in subclasses, because
+    // the calculation doesn't change (instead, override caloriesMultiplier).
+    var calories: Float { return milliliters * caloriesMultiplier }
+    var protein: Float { return milliliters * 1.0 }
+    var water: Float { return milliliters * 1.0 }
+    var fiber: Float { return milliliters * 1.0 }
+    var calcium: Float { return milliliters * 1.0 }
+    var iron: Float { return milliliters * 1.0 }
+    var potassium: Float { return milliliters * 1.0 }
+    var phosphorus: Float { return milliliters * 1.0 }
+    var sodium: Float { return milliliters * 1.0 }
+    var vitaminD: Float { return milliliters * 1.0 }
+    var zinc: Float { return milliliters * 1.0 }
     
     init(intake: Intake) {
         self.intake = intake
-    }
-    
-    func recalculate() {
-        // Nothing here yet. Definitely reimplement this method in subclasses.
     }
 }
