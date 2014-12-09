@@ -22,6 +22,21 @@ class Calculator {
     var vitaminD: Float = 0.0
     var zinc: Float = 0.0
     
+    func formula(intake: Intake, type: FormulaType) -> Formula {
+        switch type {
+        case .B:
+            return BoostFormula(intake: intake)
+        case .BKE:
+            return BoostKidEssentialsFormula(intake: intake)
+        case .BKEF:
+            return BoostKidEssentialsWithFiberFormula(intake: intake)
+        case .CP:
+            return CompleatPedeatricFormula(intake: intake)
+        case .CPRC:
+            return CompleatPedeatricRCFormula(intake: intake)
+        }
+    }
+    
     func calc(formulaSelected:FormulaType, value:Float, toggleValue:Int) -> (intake: Float, calories: Float, protein: Float, water: Float, fiber: Float, calcium: Float, iron: Float, potassium: Float, phosphorus: Float, sodium: Float, vitaminD: Float, zinc: Float) {
         
         var ml = value

@@ -32,16 +32,16 @@ class Formula {
     // This one is defined in the super-class and not usually overriden in subclasses, because
     // the calculation doesn't change (instead, override caloriesMultiplier).
     var calories: Float { return milliliters * caloriesMultiplier }
-    var protein: Float { return milliliters * 1.0 }
-    var water: Float { return milliliters * 1.0 }
-    var fiber: Float { return milliliters * 1.0 }
-    var calcium: Float { return milliliters * 1.0 }
-    var iron: Float { return milliliters * 1.0 }
-    var potassium: Float { return milliliters * 1.0 }
-    var phosphorus: Float { return milliliters * 1.0 }
-    var sodium: Float { return milliliters * 1.0 }
-    var vitaminD: Float { return milliliters * 1.0 }
-    var zinc: Float { return milliliters * 1.0 }
+    var protein: Float { return milliliters * 0 }
+    var water: Float { return milliliters * 0 }
+    var fiber: Float { return milliliters * 0 }
+    var calcium: Float { return milliliters * 0 }
+    var iron: Float { return milliliters * 0 }
+    var potassium: Float { return milliliters * 0 }
+    var phosphorus: Float { return milliliters * 0 }
+    var sodium: Float { return milliliters * 0 }
+    var vitaminD: Float { return milliliters * 0 }
+    var zinc: Float { return milliliters * 0 }
     
     init(intake: Intake) {
         self.intake = intake
