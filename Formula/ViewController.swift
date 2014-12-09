@@ -44,6 +44,7 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         formulaSelected = formulaOptions[row]
+        recalculateForTextValue(mlValue.text)
     }
     
     override func viewDidLoad() {
@@ -55,12 +56,11 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         super.didReceiveMemoryWarning()
     }
 
-    @IBAction func calculate() {
-        var value: Float = (mlValue.text as NSString).floatValue
-        var toggleValue = toggle.selectedSegmentIndex
+    func recalculateForTextValue(textValue: String) {
+        let value: Float = (textValue as NSString).floatValue
         var intakeValue = Intake.Direct(value)
         
-        if (toggleValue == 1) {
+        if (toggle.selectedSegmentIndex == 1) {
             intakeValue = Intake.Calories(value)
             caloriesView.alpha = 0
             intakeView.alpha = 1
@@ -95,6 +95,10 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         default:
             break;
         }
+        recalculateForTextValue(mlValue.text)
     }
     
+    @IBAction func textValueChanged(sender: UITextField) {
+        recalculateForTextValue(sender.text)
+    }
 }
