@@ -9,7 +9,10 @@
 import Foundation
 
 class Formula {
-    var intake: Float = 0.0
+    var intake: Float = 0.0 {
+        didSet { recalculate() }
+    }
+    
     var calories: Float = 0.0
     var protein: Float = 0.0
     var water: Float = 0.0
@@ -24,5 +27,9 @@ class Formula {
     
     init(intake: Float) {
         self.intake = intake
+    }
+    
+    func recalculate() {
+        // Nothing here yet. Definitely reimplement this method in subclasses.
     }
 }
