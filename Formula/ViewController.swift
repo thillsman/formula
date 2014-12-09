@@ -27,8 +27,8 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     @IBOutlet weak var caloriesView: UIView!
     @IBOutlet weak var intakeView: UIView!
     @IBOutlet weak var toggle: UISegmentedControl!
-    var formulaOptions = Formula.allValues
-    var formulaSelected: Formula?
+    var formulaOptions = FormulaType.allValues
+    var formulaSelected: FormulaType?
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
@@ -44,6 +44,7 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         formulaSelected = formulaOptions[row]
+        recalculateForTextValue(mlValue.text)
     }
     
     override func viewDidLoad() {
@@ -55,30 +56,32 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         super.didReceiveMemoryWarning()
     }
 
-    @IBAction func calculate() {
-        var value: Float = (mlValue.text as NSString).floatValue
-        var toggleValue = toggle.selectedSegmentIndex
-        if(toggleValue == 1){
+    func recalculateForTextValue(textValue: String) {
+        let value: Float = (textValue as NSString).floatValue
+        var intakeValue = Intake.Direct(value)
+        
+        if (toggle.selectedSegmentIndex == 1) {
+            intakeValue = Intake.Calories(value)
             caloriesView.alpha = 0
             intakeView.alpha = 1
         } else {
             caloriesView.alpha = 1
             intakeView.alpha = 0
         }
-        var calculateReturn = Calculator()
-        calculateReturn.calc(formulaSelected!, value: value, toggleValue: toggleValue)
-        intakeVal.text = String(format: "%.1f", calculateReturn.intake)
-        caloriesVal.text = String(format: "%.1f", calculateReturn.calories)
-        proteinVal.text = String(format: "%.1f", calculateReturn.protein)
-        waterVal.text = String(format: "%.1f", calculateReturn.water)
-        fiberVal.text = String(format: "%.1f", calculateReturn.fiber)
-        calciumVal.text = String(format: "%.1f", calculateReturn.calcium)
-        ironVal.text = String(format: "%.1f", calculateReturn.iron)
-        potassiumVal.text = String(format: "%.1f", calculateReturn.potassium)
-        phosphorusVal.text = String(format: "%.1f", calculateReturn.phosphorus)
-        sodiumVal.text = String(format: "%.1f", calculateReturn.sodium)
-        vitaminDVal.text = String(format: "%.1f", calculateReturn.vitaminD)
-        zincVal.text = String(format: "%.1f", calculateReturn.zinc)
+        
+        var formula = Calculator.formula(intakeValue, type: formulaSelected!)
+        intakeVal.text = String(format: "%.1f", formula.milliliters)
+        caloriesVal.text = String(format: "%.1f", formula.calories)
+        proteinVal.text = String(format: "%.1f", formula.protein)
+        waterVal.text = String(format: "%.1f", formula.water)
+        fiberVal.text = String(format: "%.1f", formula.fiber)
+        calciumVal.text = String(format: "%.1f", formula.calcium)
+        ironVal.text = String(format: "%.1f", formula.iron)
+        potassiumVal.text = String(format: "%.1f", formula.potassium)
+        phosphorusVal.text = String(format: "%.1f", formula.phosphorus)
+        sodiumVal.text = String(format: "%.1f", formula.sodium)
+        vitaminDVal.text = String(format: "%.1f", formula.vitaminD)
+        zincVal.text = String(format: "%.1f", formula.zinc)
     }
     
     @IBAction func toggleChanged(sender: UISegmentedControl) {
@@ -92,6 +95,10 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         default:
             break;
         }
+        recalculateForTextValue(mlValue.text)
     }
     
+    @IBAction func textValueChanged(sender: UITextField) {
+        recalculateForTextValue(sender.text)
+    }
 }
