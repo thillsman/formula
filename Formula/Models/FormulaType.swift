@@ -1,8 +1,8 @@
 //
-//  FormulaType
+//  FormulaType.swift
 //  Formula
 //
-//  Created by Tyler Hillsman on 12/8/14.
+//  Created by Tyler Hillsman on 12/9/14.
 //  Copyright (c) 2014 Tyler Hillsman. All rights reserved.
 //
 

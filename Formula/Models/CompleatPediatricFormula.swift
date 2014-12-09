@@ -1,5 +1,5 @@
 //
-//  CompleatPedeatricFormula.swift
+//  CompleatPediatricFormula.swift
 //  Formula
 //
 //  Created by Ben Kreeger on 12/8/14.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CompleatPedeatricFormula: Formula {
+class CompleatPediatricFormula: Formula {
     override var caloriesMultiplier: Float { return 1.0 }
     override var protein: Float { return milliliters / 1000 * 38 }
     override var water: Float { return milliliters * 0.82 }

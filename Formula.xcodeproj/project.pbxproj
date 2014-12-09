@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B5AA0A491A36A91C00494C5D /* Formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AA0A481A36A91C00494C5D /* Formula.swift */; };
-		B5AA0A4C1A36A9B200494C5D /* CompleatPedeatricRCFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AA0A4B1A36A9B200494C5D /* CompleatPedeatricRCFormula.swift */; };
+		B5AA0A4C1A36A9B200494C5D /* CompleatPediatricRCFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AA0A4B1A36A9B200494C5D /* CompleatPediatricRCFormula.swift */; };
 		B5AA0A4E1A37396A00494C5D /* Intake.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AA0A4D1A37396A00494C5D /* Intake.swift */; };
-		B5AA0A521A37410700494C5D /* CompleatPedeatricFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AA0A511A37410700494C5D /* CompleatPedeatricFormula.swift */; };
+		B5AA0A521A37410700494C5D /* CompleatPediatricFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AA0A511A37410700494C5D /* CompleatPediatricFormula.swift */; };
 		B5AA0A561A37415700494C5D /* BoostKidEssentialsWithFiberFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AA0A551A37415700494C5D /* BoostKidEssentialsWithFiberFormula.swift */; };
 		B5AA0A581A3741B800494C5D /* BoostKidEssentialsFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AA0A571A3741B800494C5D /* BoostKidEssentialsFormula.swift */; };
 		B5AA0A5A1A3741F000494C5D /* BoostFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AA0A591A3741F000494C5D /* BoostFormula.swift */; };
+		D2ABB0F61A3755B600BF9A7E /* FormulaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABB0F51A3755B600BF9A7E /* FormulaType.swift */; };
 		D2B7F90B19EB5FF0008B8055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7F90A19EB5FF0008B8055 /* AppDelegate.swift */; };
 		D2B7F90D19EB5FF0008B8055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7F90C19EB5FF0008B8055 /* ViewController.swift */; };
 		D2B7F91019EB5FF0008B8055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B7F90E19EB5FF0008B8055 /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		D2B7F91519EB5FF0008B8055 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2B7F91319EB5FF0008B8055 /* LaunchScreen.xib */; };
 		D2B7F92119EB5FF0008B8055 /* FormulaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7F92019EB5FF0008B8055 /* FormulaTests.swift */; };
 		D2F45EFA1A3685AB00E488C1 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F45EF91A3685AB00E488C1 /* Calculator.swift */; };
-		D2F45EFC1A36860C00E488C1 /* FormulaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F45EFB1A36860C00E488C1 /* FormulaType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +36,13 @@
 
 /* Begin PBXFileReference section */
 		B5AA0A481A36A91C00494C5D /* Formula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Formula.swift; path = ../Formula.swift; sourceTree = "<group>"; };
-		B5AA0A4B1A36A9B200494C5D /* CompleatPedeatricRCFormula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleatPedeatricRCFormula.swift; sourceTree = "<group>"; };
+		B5AA0A4B1A36A9B200494C5D /* CompleatPediatricRCFormula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleatPediatricRCFormula.swift; sourceTree = "<group>"; };
 		B5AA0A4D1A37396A00494C5D /* Intake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intake.swift; sourceTree = "<group>"; };
-		B5AA0A511A37410700494C5D /* CompleatPedeatricFormula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleatPedeatricFormula.swift; sourceTree = "<group>"; };
+		B5AA0A511A37410700494C5D /* CompleatPediatricFormula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleatPediatricFormula.swift; sourceTree = "<group>"; };
 		B5AA0A551A37415700494C5D /* BoostKidEssentialsWithFiberFormula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoostKidEssentialsWithFiberFormula.swift; sourceTree = "<group>"; };
 		B5AA0A571A3741B800494C5D /* BoostKidEssentialsFormula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoostKidEssentialsFormula.swift; sourceTree = "<group>"; };
 		B5AA0A591A3741F000494C5D /* BoostFormula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoostFormula.swift; sourceTree = "<group>"; };
+		D2ABB0F51A3755B600BF9A7E /* FormulaType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaType.swift; sourceTree = "<group>"; };
 		D2B7F90519EB5FF0008B8055 /* Formula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Formula.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B7F90919EB5FF0008B8055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2B7F90A19EB5FF0008B8055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,9 +53,7 @@
 		D2B7F91A19EB5FF0008B8055 /* FormulaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormulaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B7F91F19EB5FF0008B8055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2B7F92019EB5FF0008B8055 /* FormulaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaTests.swift; sourceTree = "<group>"; };
-		D2B7F92A19EB6049008B8055 /* Formula.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Formula.playground; sourceTree = "<group>"; };
 		D2F45EF91A3685AB00E488C1 /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
-		D2F45EFB1A36860C00E488C1 /* FormulaType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +78,13 @@
 			isa = PBXGroup;
 			children = (
 				B5AA0A481A36A91C00494C5D /* Formula.swift */,
-				B5AA0A4B1A36A9B200494C5D /* CompleatPedeatricRCFormula.swift */,
-				B5AA0A511A37410700494C5D /* CompleatPedeatricFormula.swift */,
+				B5AA0A4B1A36A9B200494C5D /* CompleatPediatricRCFormula.swift */,
+				B5AA0A511A37410700494C5D /* CompleatPediatricFormula.swift */,
 				B5AA0A551A37415700494C5D /* BoostKidEssentialsWithFiberFormula.swift */,
 				B5AA0A571A3741B800494C5D /* BoostKidEssentialsFormula.swift */,
 				B5AA0A591A3741F000494C5D /* BoostFormula.swift */,
 				B5AA0A4D1A37396A00494C5D /* Intake.swift */,
+				D2ABB0F51A3755B600BF9A7E /* FormulaType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -113,13 +113,11 @@
 				B5AA0A4A1A36A93900494C5D /* Models */,
 				D2B7F90A19EB5FF0008B8055 /* AppDelegate.swift */,
 				D2B7F90C19EB5FF0008B8055 /* ViewController.swift */,
-				D2F45EFB1A36860C00E488C1 /* FormulaType.swift */,
 				D2F45EF91A3685AB00E488C1 /* Calculator.swift */,
 				D2B7F90E19EB5FF0008B8055 /* Main.storyboard */,
 				D2B7F91119EB5FF0008B8055 /* Images.xcassets */,
 				D2B7F91319EB5FF0008B8055 /* LaunchScreen.xib */,
 				D2B7F90819EB5FF0008B8055 /* Supporting Files */,
-				D2B7F92A19EB6049008B8055 /* Formula.playground */,
 			);
 			path = Formula;
 			sourceTree = "<group>";
@@ -249,14 +247,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5AA0A521A37410700494C5D /* CompleatPedeatricFormula.swift in Sources */,
+				B5AA0A521A37410700494C5D /* CompleatPediatricFormula.swift in Sources */,
 				D2B7F90D19EB5FF0008B8055 /* ViewController.swift in Sources */,
 				D2B7F90B19EB5FF0008B8055 /* AppDelegate.swift in Sources */,
-				D2F45EFC1A36860C00E488C1 /* FormulaType.swift in Sources */,
+				D2ABB0F61A3755B600BF9A7E /* FormulaType.swift in Sources */,
 				B5AA0A491A36A91C00494C5D /* Formula.swift in Sources */,
 				B5AA0A581A3741B800494C5D /* BoostKidEssentialsFormula.swift in Sources */,
 				B5AA0A5A1A3741F000494C5D /* BoostFormula.swift in Sources */,
-				B5AA0A4C1A36A9B200494C5D /* CompleatPedeatricRCFormula.swift in Sources */,
+				B5AA0A4C1A36A9B200494C5D /* CompleatPediatricRCFormula.swift in Sources */,
 				D2F45EFA1A3685AB00E488C1 /* Calculator.swift in Sources */,
 				B5AA0A561A37415700494C5D /* BoostKidEssentialsWithFiberFormula.swift in Sources */,
 				B5AA0A4E1A37396A00494C5D /* Intake.swift in Sources */,
