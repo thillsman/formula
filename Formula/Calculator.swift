@@ -26,6 +26,10 @@ class Calculator {
         
         var ml = value
         
+        // I'm trying to figure out a way to reduce the duplication here... perhaps moving this out
+        // to a different series of formula subclasses.
+        //
+        // Yeah, I may open a different PR with that.
         switch formulaSelected {
         case .CP:
             if(toggleValue == 1){
